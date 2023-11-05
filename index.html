@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>rock paper scissor game</h1>
+  <button onclick="
+  console.log('you have choosen rock');
+  let randonnum=Math.random()*3;
+  let choice;
+  if(randonnum>0 && randonnum<=1){
+    choice='rock';
+  }
+  else if(randonnum>1 && randonnum<=2){
+    choice='paper';
+  }
+  else{
+    choice='scissor';
+  }
+  
+  console.log(`computer has choosen ${choice}`);
+  if(choice==='scissor'){
+    console.log('you won');
+  }
+  else if(choice==='rock'){
+    console.log('tied');
+  }
+  else if(choice==='paper'){
+    console.log('you lost');
+  }
+  
+  ">rock</button>
+
+
+  <button  onclick="
+  console.log('you have choosen paper');
+   randonnum=Math.random()*3;
+   
+  if(randonnum>0 && randonnum<=1){
+    choice='rock';
+  }
+  else if(randonnum>1 && randonnum<=2){
+    choice='paper';
+  }
+  else{
+    choice='scissor';
+  }
+  
+  console.log(`computer has choosen ${choice}`);
+  if(choice==='scissor'){
+    console.log('you lost');
+  }
+  else if(choice==='rock'){
+    console.log('you won');
+  }
+  else if(choice==='paper'){
+    console.log('tied');
+  }
+  
+  ">paper</button>
+  <button onclick="
+  console.log('you have choosen scissor');
+   randonnum=Math.random()*3;
+  
+  if(randonnum>0 && randonnum<=1){
+    choice='rock';
+  }
+  else if(randonnum>1 && randonnum<=2){
+    choice='paper';
+  }
+  else{
+    choice='scissor';
+  }
+  
+  console.log(`computer has choosen ${choice}`);
+  if(choice==='scissor'){
+    console.log('tied');
+  }
+  else if(choice==='rock'){
+    console.log('you lost');
+  }
+  else if(choice==='paper'){
+    console.log('you won');
+  }
+  
+  " >scissor</button>
+
+
+</body>
+</html>
